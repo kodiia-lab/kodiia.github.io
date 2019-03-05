@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+  font-family: trebuchet MS;
+  display: grid;
+  grid-template-columns: auto 400px 400px auto;
+  grid-template-rows: 100vh 0.1fr 1fr 1fr 1fr 1fr 0.1fr 1fr 1fr 0.01fr 1fr 0.1fr 1fr 2fr;
+  
+}
+#header {
+  grid-column: 1/5; 
+  align-self: center;
+}
+
+.canvas{
+  display: none;
+ margin: 0 auto; 
+}
+
+.title{
+  grid-column:1/5;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: auto;
+  text-align:center;
+}
+
+.bigtext {
+  font-size: 7rem;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 20px;
+  }
+
+.smalltext {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: bottom;
+  letter-spacing: 0.4rem;
+ }
+
+.coursestext {
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 2rem;
+ }
+
+.coursestextbold {
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 2rem;
+ }
+
+.courses {
+  grid-column:2/3;
+  margin: auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align:center;
+  vertical-align: text-bottom;
+  
+  
+  
+}
+.coursesimg {
+  grid-column:3/4;
+  margin: auto;
+}
+
+
+
+#contacts {
+  
+  grid-column: 2/4;
+  align-self:center;
+  margin:auto;
+}
+
+body {
+  background: linear-gradient(#33FFD2, #FF8FD4);
+}
+
+canvas {
+  display: block;
+}
