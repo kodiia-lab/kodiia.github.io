@@ -10,8 +10,8 @@ function setup() {
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
 
-   r = random(220, 250);
-   b = random(200, 220);
+   r = 0;
+   b = 235;
 
 
 
