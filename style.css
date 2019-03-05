@@ -32,6 +32,7 @@
   margin: auto;
   text-align: center;
   letter-spacing: 20px;
+  color: #7af3e0;
   }
 
 .smalltext {
@@ -40,6 +41,7 @@
   text-align: center;
   vertical-align: bottom;
   letter-spacing: 0.4rem;
+  color: #a6fff1;
  }
 
 .coursestext {
@@ -47,6 +49,7 @@
   font-weight: 100;
   text-align: center;
   margin: 2rem;
+  color: #a6fff1;
  }
 
 .coursestextbold {
@@ -66,6 +69,7 @@
   
   
   
+  
 }
 .coursesimg {
   grid-column:3/4;
@@ -82,7 +86,9 @@
 }
 
 body {
-  background: linear-gradient(#33FFD2, #FF8FD4);
+/*   background: linear-gradient(#A5FECB , #5433FF); */
+  background: #001084;
+  color: #00e4c0;
 }
 
 canvas {
