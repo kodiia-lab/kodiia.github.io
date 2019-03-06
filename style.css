@@ -4,7 +4,7 @@
 #container {
   font-family: trebuchet MS;
   display: grid;
-  grid-template-columns: auto 400px 400px auto;
+  grid-template-columns: auto 30% 30% auto;
   grid-template-rows: 100vh 0.1fr 1fr 1fr 1fr 1fr 0.1fr 1fr 1fr 0.01fr 1fr 0.1fr 1fr 2fr;
   
 }
