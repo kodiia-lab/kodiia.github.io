@@ -1,131 +1,116 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
   <meta charset="utf-8" />
-  
-
 </head>
-
 <body>
+<div class="container">
 
-
-  <div id="container">
-    <div id="header">
-      <script src="sketch.js" class="canvas" type="text/javascript"></script>
-      <p class="bigtext">КОДИЯ</p>
-      <p class="smalltext">детская цифровая лаборатория</p>
-    </div>
-
-    <div class="title">
-      <p class="titletext">МЫ ПРОГРАММИРУЕМ</p>
-    </div>
-
-    <div class="courses">
-      <p>SCRATCH. <br> НАЧАЛЬНЫЙ КУРС.</p>
-      <p class="coursestext">Основы программирования на примере визуальной событийно-ориентированной среды Scratch. Курс направлен на знакомство со способами создания анимации и игр.</p>
-      <p class="coursestextbold">Возраст: 8-10 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses3img">
-      <!--      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Scratch_Cat.png/513px-Scratch_Cat.png" ; width=200; height=200;> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_scratch.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="courses">
-      <p>SCRATCH. <br> ПРОДВИНУТЫЙ КУРС.</p>
-      <p class="coursestext">Основы программирования на примере визуальной событийно-ориентированной среды Scratch. Курс направлен на знакомство со способами создания анимации, а также игр различных жанров.</p>
-      <p class="coursestextbold">Возраст: 11-13 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses3img">
-      <!--       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Scratch_Cat.png/513px-Scratch_Cat.png" ; width=200; height=200;> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_scratch_2.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="courses" id="courses1">
-      <p>JAVASCRIPT</p>
-      <p class="coursestext">Откроем возможности самого популярного языка программирования в мире. </p>
-      <p class="coursestextbold">Возраст: от 13 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses1img">
-      <!--       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" ; width=200; height=200> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_js.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="courses" id="courses2">
-      <p>PROCESSING</p>
-      <p class="coursestext">Что такое генеративный дизайн? А чем он отличается от вычислительного? Визуализация данных, создание анимации и интерфейсов, разработка собственных приложений и 3д моделирование - возможности языка Processing, основанного на Java, практически безграничны. А еще он очень прост и понятен для изучения. Особенно в рамках нашего курса! Язык будет полезен начинающим художникам, дизайнерам и исследователям.</p>
-      <p class="coursestextbold">Возраст: от 15 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses2img">
-      <!--       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/1200px-Processing_Logo_Clipped.svg.png" ; width=200; height=200;> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_prcsng.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="title">
-      <p class="titletext">МЫ МОДЕЛИРУЕМ</p>
-    </div>
-
-    <div class="courses" id="courses3">
-      <p>3Д-МОДЕЛИРОВАНИЕ. <br> БАЗОВЫЙ КУРС. </p>
-      <p class="coursestext">Что такое кубоктаэдр и чем он отличается от додекаэдра? Как смоделить дом или целый город? На каком космическом корабле вы бы отправились открывать другие планеты? Моделирование различных объектов в SketchUp. Основные техники и инструменты. </p>
-      <p class="coursestextbold">Возраст: от 11 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses3img">
-      <!--       <img src="http://pixelartmaker.com/art/7de59d588066aab.png" ; width=200; height=200> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_3d1.png?raw=true" ; width=400; height=400;>
-    </div>
-
-
-    <div class="courses">
-      3Д-МОДЕЛИРОВАНИЕ. <br> ПРОДВИНУТЫЙ КУРС.
-      <p class="coursestext">Основы работы в Blender и Vectary. Создание различных объектов. Основные техники и инструменты. По итогам курса - 3Д печать своего объекта.</p>
-      <p class="coursestextbold">Возраст: от 13 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses3img">
-      <!--       <img src="https://i.all3dp.com/wp-content/uploads/2018/06/26145026/vectary1.png" ; width=200; height=200;> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_3d22.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="title">
-      <p class="titletext">МЫ СОЗДАЕМ</p>
-    </div>
-
-    <div class="courses" id="courses2">
-      <p>САЙТЫ. <br> HTML, CSS.</p>
-      <p class="coursestext">Большинство информации сегодня мы получаем онлайн. Что такое Всемирная паутина? Как она устроена? Хотите создать собственную страницу в Интернете и придумать ей яркое и красочное оформление? Курс нацелен на изучение основ языка разметки гипертекста HTML и таблиц стилей CSS. </p>
-      <p class="coursestextbold">Возраст: от 12 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses2img">
-      <!--       <img src="https://digitalworkshopcenter.com/wp-content/uploads/2014/10/html1.png" ; width=300; height=200;> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_html.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="title">
-      <p class="titletext">МЫ ИЗОБРЕТАЕМ</p>
-    </div>
-
-    <div class="courses" id="courses2">
-      <p>РОБОТОТЕХНИКА</p>
-      <p class="coursestext">Вам нравятся роботы и хочется собирать и конструировать их самостоятельно? Вы что-то слышали про Интернет Вещей и хотели бы более детально разобраться в этом вопросе? Курс робототехники на базе Arduino позволит познакомиться с устройством различных датчиков, серво-приводов, моторов и многого другого, а главное - позволит научиться самостоятельно собирать из них различные устройства. </p>
-      <p class="coursestextbold">Возраст: от 14 лет.</p>
-    </div>
-    <div class="coursesimg" id="courses2img">
-      <!--       <img src="https://pngimage.net/wp-content/uploads/2018/05/arduino-uno-png-5.png" ; width=300; height=200;> -->
-      <img src="https://github.com/KODIIA/kodiia.github.io/blob/master/mockup_arduino.png?raw=true" ; width=400; height=400;>
-    </div>
-
-    <div class="title" id="contacts">
-      <p>ИССЛЕДОВАТЬ НОВОЕ <br> ВМЕСТЕ С НАМИ ЛЕГКО!</p>
-      <p class="coursestext">Приходите на занятия: </p>
-      <p class="coursestextbold">г. Санкт-Петербург, ул. Типанова, д. 12.</p>
-      <p class="coursestext"> Записывайтесь по телефону: </p>
-      <p class="coursestextbold">8 888 888 88 88</p>
-    </div>
+  <div class="block">
+    <p class="logo">|{</p>
   </div>
-</body>
+  <div class="block1">
+    <p class="title">КОДИЯ</p>
+    <p class="title_small">детская цифровая лаборатория</p>
+<p class="text">Учимся, создавая. Знакомим с основами различных направлений современного цифрового творчетсва.
+    </p>
+  </div>
 
+  <div class="block_center">
+    <p class="title_1">МЫ ПРОГРАММИРУЕМ</p>
+  </div>
+
+  <div class="block">
+    <p class="title">SCRATCH</p>
+    <p class="title_small">для самых юных<br>8-10 лет</p>
+    <p class="text">Основы программирования на примере визуальной событийно-ориентированной среды Scratch. Курс направлен на знакомство со способами создания анимации и игр.</p>
+  </div>
+  <div class="block">
+    <p class="title">SCRATCH</p>
+    <p class="title_small">продвинутый<br>11-13 лет</p>
+    <p class="text">Основы программирования на примере визуальной событийно-ориентированной среды Scratch. Курс направлен на знакомство со способами создания анимации, а также игр различных жанров.</p>
+
+  </div>
+  <div class="block">
+    <p class="title">JAVASCRIPT</p>
+    <p class="title_small">c 13 лет</p>
+    <p class="text">Хотите познакомиться с одним из самых популярных языков в мире?
+      Хотите создавать крутые онлайн анимации?
+      А разработать игру, в которую смогут играть онлайн ваши друзья?
+      Работа с графикой, объектами, классами и много всего другого - на этом курсе!</p>
+
+  </div>
+
+  <div class="block">
+    <p class="title">PROCESSING</p>
+    <p class="title_small">c 13 лет</p>
+    <p class="text">Что такое генеративный дизайн?
+      А чем он отличается от вычислительного?
+      Визуализация данных, создание анимации и интерфейсов, разработка собственных приложений
+      и 3д моделирование - возможности языка Processing, основанного на Java, практически безграничны.
+      А еще он очень прост и понятен для изучения. Особенно в рамках нашего курса!
+      Язык будет полезен начинающим художникам, дизайнерам и исследователям.</p>
+  </div>
+
+
+    <div class="block_center">
+      <p class="title_1">МЫ МОДЕЛИРУЕМ</p>
+    </div>
+
+    <div class="block">
+      <p class="title">3Д-МОДЕЛИРОВАНИЕ</p>
+      <p class="title_small">для начинающих<br> c 11 лет</p>
+      <p class="text">Что такое кубоктаэдр и чем он отличается от додекаэдра?
+        Как смоделить дом или целый город?
+        На каком космическом корабле вы бы отправились открывать другие планеты?
+        Моделирование различных объектов в SketchUp. Основные техники и инструменты.</p>
+    </div>
+
+    <div class="block">
+      <p class="title">3Д-МОДЕЛИРОВАНИЕ</p>
+      <p class="title_small">продвинутое<br> c 13 лет</p>
+      <p class="text">Создадим различные объекты. Придумаем и создадим своих персонажей.
+        Познакомимся с анимацией, композицией кадра, рендерами и другими интересными вещами.
+        А в конце - напечатаем свою модель на 3д принтере!</p>
+    </div>
+
+    <div class="block_center">
+      <p class="title_1">МЫ СОЗДАЕМ</p>
+    </div>
+
+    <div class="block">
+      <p class="title">САЙТЫ. HTML. CSS.</p>
+      <p class="title_small">c 12 лет</p>
+      <p class="text">Большинство информации сегодня мы получаем онлайн. Что такое Всемирная паутина?
+        Как она устроена? Хотите создать собственную страницу в Интернете и придумать ей яркое и
+        красочное оформление?
+        Курс нацелен на изучение основ языка разметки гипертекста HTML и таблиц стилей CSS. </p>
+    </div>
+
+    <div class="block_center">
+      <p class="title_1">МЫ ИЗОБРЕТАЕМ</p>
+    </div>
+
+    <div class="block">
+      <p class="title">РОБОТОТЕХНИКА</p>
+      <p class="title_small">c 14 лет</p>
+      <p class="text">Вам нравятся роботы и хочется собирать и конструировать их самостоятельно?
+        Вы что-то слышали про Интернет Вещей и хотели бы более детально разобраться в этом вопросе?
+        Курс робототехники на базе Arduino позволит познакомиться с устройством различных датчиков,
+        серво-приводов, моторов и многого другого, а главное - позволит научиться самостоятельно
+        собирать из них различные устройства. </p>
+    </div>
+
+</div>
+
+<footer class="footer">
+<p class="title">ИССЛЕДОВАТЬ НОВОЕ ВМЕСТЕ С НАМИ ЛЕГКО!</p>
+<p class="title_small">Приходите на занятия: </p>
+<p class="text">г. Санкт-Петербург, ул. Типанова, д. 12.</p>
+<p class="title_small"> Записывайтесь по телефону: </p>
+<p class="text">8 888 888 88 88</p>
+</footer>
+
+</body>
 </html>
