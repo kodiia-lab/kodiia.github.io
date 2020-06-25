@@ -1,117 +1,282 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8" />
-</head>
-<body>
-<div class="container">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <div class="block">
-    <p class="logo">|{</p>
-  </div>
-  <div class="block1">
-    <p class="title">КОДИЯ</p>
-    <p class="title_small">детская цифровая лаборатория</p>
-<p class="text">Учимся, создавая. Знакомим с основами различных направлений современного цифрового творчетсва.
-    </p>
-  </div>
+    <link
+      rel="icon"
+      type="image/gif/png"
+      href="https://raw.githubusercontent.com/KODIIA/kodiia.github.io/master/kodiia_logo.png"
+    />
+    <title>
+      Курсы для детей | Программирование, 3Д моделирование, игры | Кодия
+    </title>
 
-  <div class="block_center">
-    <p class="title_1">МЫ ПРОГРАММИРУЕМ</p>
-  </div>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
 
-  <div class="block">
-    <p class="title">SCRATCH</p>
-    <p class="title_small">для самых юных<br>8-10 лет</p>
-    <p class="text">Основы программирования на примере визуальной событийно-ориентированной среды Scratch. Курс направлен на знакомство со способами создания анимации и игр.</p>
-  </div>
-  <div class="block">
-    <p class="title">SCRATCH</p>
-    <p class="title_small">продвинутый<br>11-13 лет</p>
-    <p class="text">Основы программирования на примере визуальной событийно-ориентированной среды Scratch. Курс направлен на знакомство со способами создания анимации, а также игр различных жанров.</p>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p class="textHeader">
+        <a href="#kodiia">!&lt;одия</a>
+      </p>
+      <p class="textHeader">
+        <a href="#courses">подход</a>
+      </p>
+      <p class="textHeader">
+        <a href="#coursesList">курсы</a>
+      </p>
+      <p class="textHeader">
+        <a href="#courseForm">форма</a>
+      </p>
+      <p class="textHeader">
+        <a href="#form">записаться</a>
+      </p>
+    </header>
 
-  </div>
-  <div class="block">
-    <p class="title">JAVASCRIPT</p>
-    <p class="title_small">c 13 лет</p>
-    <p class="text">Хотите познакомиться с одним из самых популярных языков в мире?
-      Хотите создавать крутые онлайн анимации?
-      А разработать игру, в которую смогут играть онлайн ваши друзья?
-      Работа с графикой, объектами, классами и много всего другого - на этом курсе!</p>
+    <div class="main">
+      <div class="block" id="kodiia">
+        <div class="blockText">
+          <h1 class="textBold">
+            !&lt;одия - творческая лаборатория для детей
+          </h1>
+          <div class="blockBar"></div>
+          <p class="textSimple">
+            Программирование, 3D моделирование, графический дизайн, роботы и
+            многое другое! Поможем юным исследователям найти свой путь и не
+            потеряться в мире современных технологий!
+          </p>
+        </div>
+        <div class="blockImage">
+          <img
+            src="https://i.pinimg.com/originals/67/b2/a9/67b2a9ba5e85822f237caae92111e938.gif"
+          />
+        </div>
+      </div>
 
-  </div>
+      <div class="block" id="courses">
+        <div class="blockImage">
+          <img src=".." />
+        </div>
+        <div class="blockText">
+          <h2 class="textBold">
+            наши курсы развивают логику, аналитическое мышление и креативное
+            видение
+          </h2>
+          <div class="blockBar"></div>
+          <p class="textSimple">
+            Познакомим с различными языками программирования, трехмерным
+            моделированием и графическими редакторами. Напишем игры и программы,
+            смоделируем персонажей и сцены, соберём из датчиков и моторов
+            гаджеты и роботов.
+          </p>
+        </div>
+      </div>
 
-  <div class="block">
-    <p class="title">PROCESSING</p>
-    <p class="title_small">c 13 лет</p>
-    <p class="text">Что такое генеративный дизайн?
-      А чем он отличается от вычислительного?
-      Визуализация данных, создание анимации и интерфейсов, разработка собственных приложений
-      и 3д моделирование - возможности языка Processing, основанного на Java, практически безграничны.
-      А еще он очень прост и понятен для изучения. Особенно в рамках нашего курса!
-      Язык будет полезен начинающим художникам, дизайнерам и исследователям.</p>
-  </div>
+      <div class="block" id="coursesList">
+        <div class="card" onclick="">
+          <h2 class="cardTitle">
+            scratch
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="cardText">
+            course description
+          </p>
+          <img src=".." class="cardText" />
+        </div>
 
+        <div class="card" onclick="">
+          <h2 class="cardTitle">
+            python
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="cardText">
+            course description
+          </p>
+          <img src=".." class="cardText" />
+        </div>
 
-    <div class="block_center">
-      <p class="title_1">МЫ МОДЕЛИРУЕМ</p>
+        <div class="card" onclick="">
+          <h2 class="cardTitle">
+            web
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="cardText">
+            course description
+          </p>
+          <img src=".." class="cardText" />
+        </div>
+
+        <div class="card" onclick="">
+          <h2 class="cardTitle">
+            blender
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="cardText">
+            course description
+          </p>
+          <img src=".." class="cardText" />
+        </div>
+
+        <div class="card" onclick="">
+          <h2 class="cardTitle">
+            iot
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="cardText">
+            course description
+          </p>
+          <img
+            src="https://i.pinimg.com/originals/67/b2/a9/67b2a9ba5e85822f237caae92111e938.gif"
+            class="cardText"
+          />
+        </div>
+      </div>
+
+      <div class="block" id="courseForm">
+        <div class="courseForm" onclick="">
+          <h2 class="cardTitle">
+            курс
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="courseFormText">
+            Точно знаете, что ищете? Выберите интересующее направление, если
+            нравится что-то конкретное.
+          </p>
+          
+        </div>
+        <div class="courseForm" onclick="">
+          <h2 class="cardTitle">
+            абонемент
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="courseFormText">
+            Не знаете, с чего начать? Или интересно все и сразу? Выберите
+            удобное количество занятий, а программу мы подберем сами в
+            зависимости от возраста и предпочтений ребёнка.
+          </p>
+          
+        </div>
+        <div class="courseForm" onclick="">
+          <h2 class="cardTitle">
+            мастеркласс
+          </h2>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <p class="courseFormText">
+            Иногда мы принимаем участие в различных мероприятиях и к нам можно
+            попасть на короткий мастеркласс. Следите за нашими новостями в
+            соцсетях.
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="block" id="form">
+        <form class="form">
+          <!--           <div class="formContent"> -->
+
+          <input
+            type="text"
+            name="Name"
+            id="userName"
+            placeholder="Ваше имя"
+            class="formMail"
+            required
+          />
+          <input
+            type="email"
+            name="Mail"
+            id="userMail"
+            placeholder="Ваша почта"
+            class="formMail"
+            required
+          />
+          <input
+            type="tel"
+            name="Phone"
+            id="userPhone"
+            placeholder="Ваш телефон"
+            class="formMail"
+            required
+          />
+          <textarea
+            name="Message"
+            id="userMessage"
+            class="formMessage"
+            placeholder="Ваше сообщение"
+            required
+          ></textarea>
+          <div class="personalDataAgree">
+            * нажимая кнопку отправить Вы даете согласие на обработку Ваших
+            персональных данных
+          </div>
+          <div class="formSent">
+            информация отправлена
+          </div>
+          <button id="submit" class="formbtn">
+            отправить
+          </button>
+        </form>
+        <!--           </div> -->
+        <div class="blockText">
+          <h2 class="textBold">
+            запишитесь к нам
+          </h2>
+          <div class="blockBar"></div>
+          <p class="textSimple">
+            Мы с нетерпением ждём вас на наших занятиях! Онлайн и офлайн.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="block">
-      <p class="title">3Д-МОДЕЛИРОВАНИЕ</p>
-      <p class="title_small">для начинающих<br> c 11 лет</p>
-      <p class="text">Что такое кубоктаэдр и чем он отличается от додекаэдра?
-        Как смоделить дом или целый город?
-        На каком космическом корабле вы бы отправились открывать другие планеты?
-        Моделирование различных объектов в SketchUp. Основные техники и инструменты.</p>
-    </div>
+    <footer>
+      <p class="textHeader">мы в соцсетях: <a href="..">instagram</a></p>
+      <p class="textHeader">
+        !&lt;одия, 2020 &copy
+      </p>
+    </footer>
 
-    <div class="block">
-      <p class="title">3Д-МОДЕЛИРОВАНИЕ</p>
-      <p class="title_small">продвинутое<br> c 13 лет</p>
-      <p class="text">Создадим различные объекты. Придумаем и создадим своих персонажей.
-        Познакомимся с анимацией, композицией кадра, рендерами и другими интересными вещами.
-        А в конце - напечатаем свою модель на 3д принтере!</p>
-    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <!--     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div> -->
+    <!--     <script src="https://button.glitch.me/button.js" defer></script> -->
 
-    <div class="block_center">
-      <p class="title_1">МЫ СОЗДАЕМ</p>
-    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
 
-    <div class="block">
-      <p class="title">САЙТЫ. HTML. CSS.</p>
-      <p class="title_small">c 12 лет</p>
-      <p class="text">Большинство информации сегодня мы получаем онлайн. Что такое Всемирная паутина?
-        Как она устроена? Хотите создать собственную страницу в Интернете и придумать ей яркое и
-        красочное оформление?
-        Курс нацелен на изучение основ языка разметки гипертекста HTML и таблиц стилей CSS. </p>
-    </div>
-
-    <div class="block_center">
-      <p class="title_1">МЫ ИЗОБРЕТАЕМ</p>
-    </div>
-
-    <div class="block">
-      <p class="title">РОБОТОТЕХНИКА</p>
-      <p class="title_small">c 14 лет</p>
-      <p class="text">Вам нравятся роботы и хочется собирать и конструировать их самостоятельно?
-        Вы что-то слышали про Интернет Вещей и хотели бы более детально разобраться в этом вопросе?
-        Курс робототехники на базе Arduino позволит познакомиться с устройством различных датчиков,
-        серво-приводов, моторов и многого другого, а главное - позволит научиться самостоятельно
-        собирать из них различные устройства. </p>
-    </div>
-
-</div>
-
-<footer class="footer">
-<p class="title">ИССЛЕДОВАТЬ НОВОЕ ВМЕСТЕ С НАМИ ЛЕГКО!</p>
-<p class="title_small">Приходите на занятия: </p>
-<p class="text">г. Санкт-Петербург, ул. Типанова, д. 12.</p>
-<p class="title_small"> Записывайтесь онлайн: </p>
-<p class="text">kodiia.lab@gmail.com</p>
-<a class="text" href="https://www.instagram.com/kodiia.lab/">@kodiia.lab</a>
-</footer>
-
-</body>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+  </body>
 </html>
