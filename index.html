@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link
       rel="icon"
       type="image/gif/png"
@@ -22,185 +21,140 @@
   </head>
   <body>
     <header>
-      <p class="textHeader">
-        <a href="#kodiia">!&lt;одия</a>
-      </p>
-      <p class="textHeader">
-        <a href="#courses">подход</a>
-      </p>
-      <p class="textHeader">
-        <a href="#coursesList">курсы</a>
-      </p>
-      <p class="textHeader">
-        <a href="#courseForm">форма</a>
-      </p>
-      <p class="textHeader">
-        <a href="#form">записаться</a>
-      </p>
+      <button onclick="showKodiia()">
+        кодия
+      </button>
+
+      <button onclick="showCourses()">
+        курсы
+      </button>
+
+      <button onclick="showForm()">
+        форма обучения
+      </button>
+
+      <button onclick="showContacts()">
+        записаться
+      </button>
+      <button onclick="">
+        <a href="https://www.instagram.com/kodiia.lab/">инстаграмм</a>
+      </button>
     </header>
 
-    <div class="main">
-      <div class="block" id="kodiia">
-        <div class="blockText">
-          <h1 class="textBold">
-            !&lt;одия - творческая лаборатория для детей
-          </h1>
-          <div class="blockBar"></div>
-          <p class="textSimple">
-            Программирование, 3D моделирование, графический дизайн, роботы и
-            многое другое! Поможем юным исследователям найти свой путь и не
-            потеряться в мире современных технологий!
-          </p>
-        </div>
-        <div class="blockImage">
-          <img
-            src="https://i.pinimg.com/originals/67/b2/a9/67b2a9ba5e85822f237caae92111e938.gif"
-          />
-        </div>
+    <div id="about"></div>
+
+    <div class="container">
+      <div id="kodiia">
+        <h1>
+          !&lt;одия - творческая лаборатория для детей
+        </h1>
+        <p>
+          Программирование, 3D моделирование, графический дизайн, роботы и
+          многое другое! Поможем юным исследователям найти свой путь и не
+          потеряться в мире современных технологий!
+        </p>
+        <h2>
+          &gt; наши курсы развивают логику, аналитическое мышление и креативное
+          видение &lt;
+        </h2>
+        <p>
+          Мы знакомим с различными языками программирования, трехмерным
+          моделированием и графическими редакторами. Пишем игры и программы,
+          моделируем персонажей и сцены, собираем из датчиков и моторов гаджеты
+          и роботов.
+        </p>
+
+        <p>
+          !&lt;одия, 2020 ©
+        </p>
       </div>
 
-      <div class="block" id="courses">
-        <div class="blockImage">
-          <img src=".." />
-        </div>
-        <div class="blockText">
-          <h2 class="textBold">
-            наши курсы развивают логику, аналитическое мышление и креативное
-            видение
-          </h2>
-          <div class="blockBar"></div>
-          <p class="textSimple">
-            Познакомим с различными языками программирования, трехмерным
-            моделированием и графическими редакторами. Напишем игры и программы,
-            смоделируем персонажей и сцены, соберём из датчиков и моторов
-            гаджеты и роботов.
-          </p>
-        </div>
+      <div id="courses">
+        <h2>&gt; алгоритмы</h2>
+        <p>
+          Как устроен компьютер? Что такое алгоритм? Что такое цикл? Как
+          использовать переменные? Об этом и многом другом мы поговорим,
+          создавая свои игры и программы. Впереди нас ждет множество интересных
+          заданий, головоломок и знакомство с языком программирования Scratch.
+          Курс рассчитан на детей 8-11 лет.
+        </p>
+
+        <h2>&gt; python</h2>
+        <p>
+          Python считается языком программирования с самым простым синтаксисом.
+          Поэтому он отлично подходит для начала. Но профессионалы в области
+          Data Science, которые работают с большими данными, также активно
+          используют его в своей деятельности. Мы научимся писать на Python
+          программы и разрабатывать интерфейсы, познакомимся с разными средами
+          разработки и модулями языка. Курс рассчитан на детей 12-15 лет.
+        </p>
+
+        <h2>&gt; js</h2>
+        <p>
+          JavaScript - лидер по популярности среди языков программирования.
+          Преимущественно используется в веб-программировании. Отлично подходит
+          для написания различных программ и игр. В ходе курса мы сосредоточимся
+          на особенностях языка и изучим дополнительные библиотеки и фреймворки
+          для работы с 2д и 3д графикой. Курс рассчитан на детей 13-17 лет.
+        </p>
+
+        <h2>&gt; web</h2>
+        <p>
+          Разберёмся, как устроены сайты. Научимся отличать frontend от
+          backend’a. Узнаем, зачем нужны HTML и CSS. Поговорим о верстке и
+          графическом дизайне. Изучим, как JavaScript добавляет интерактивности
+          приложениям и страницам. Создадим свои веб приложения. Разместим их на
+          одной из популярных платформ. Курс рассчитан на детей 13-17 лет.
+        </p>
+
+        <h2>&gt; iot</h2>
+        <p>
+          Вам нравятся роботы и хочется собирать и конструировать их
+          самостоятельно? Вы что-то слышали про Интернет Вещей и хотели бы более
+          детально разобраться в этом вопросе? Платформа Arduino - это отличный
+          способ познакомиться с этими темами. Соберем и запрограммируем
+          различные устройства, используя датчики, моторы и микроконтроллеры.
+          Курс рассчитан на детей 12-17 лет.
+        </p>
+
+        <p>
+          !&lt;одия, 2020 ©
+        </p>
       </div>
 
-      <div class="block" id="coursesList">
-        <div class="card" onclick="">
-          <h2 class="cardTitle">
-            scratch
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="cardText">
-            course description
-          </p>
-          <img src=".." class="cardText" />
-        </div>
+      <div id="form">
+        <h2>&gt; курс</h2>
+        <p>
+          Точно знаете, что ищете? Выберите интересующее направление, если
+          нравится что-то конкретное.
+        </p>
 
-        <div class="card" onclick="">
-          <h2 class="cardTitle">
-            python
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="cardText">
-            course description
-          </p>
-          <img src=".." class="cardText" />
-        </div>
+        <h2>&gt; абонемент</h2>
+        <p>
+          Не знаете, с чего начать? Или интересно все и сразу? Выберите удобное
+          количество занятий, а программу мы подберем сами в зависимости от
+          возраста и предпочтений ребёнка.
+        </p>
 
-        <div class="card" onclick="">
-          <h2 class="cardTitle">
-            web
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="cardText">
-            course description
-          </p>
-          <img src=".." class="cardText" />
-        </div>
-
-        <div class="card" onclick="">
-          <h2 class="cardTitle">
-            blender
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="cardText">
-            course description
-          </p>
-          <img src=".." class="cardText" />
-        </div>
-
-        <div class="card" onclick="">
-          <h2 class="cardTitle">
-            iot
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="cardText">
-            course description
-          </p>
-          <img
-            src="https://i.pinimg.com/originals/67/b2/a9/67b2a9ba5e85822f237caae92111e938.gif"
-            class="cardText"
-          />
-        </div>
+        <h2>&gt; мастеркласс</h2>
+        <p>
+          Иногда мы принимаем участие в различных мероприятиях и к нам можно
+          попасть на короткий мастеркласс. Следите за нашими новостями в
+          соцсетях.
+        </p>
+        <p>
+          !&lt;одия, 2020 ©
+        </p>
       </div>
 
-      <div class="block" id="courseForm">
-        <div class="courseForm" onclick="">
-          <h2 class="cardTitle">
-            курс
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="courseFormText">
-            Точно знаете, что ищете? Выберите интересующее направление, если
-            нравится что-то конкретное.
-          </p>
-          
-        </div>
-        <div class="courseForm" onclick="">
-          <h2 class="cardTitle">
-            абонемент
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="courseFormText">
-            Не знаете, с чего начать? Или интересно все и сразу? Выберите
-            удобное количество занятий, а программу мы подберем сами в
-            зависимости от возраста и предпочтений ребёнка.
-          </p>
-          
-        </div>
-        <div class="courseForm" onclick="">
-          <h2 class="cardTitle">
-            мастеркласс
-          </h2>
-          <div class="bar">
-            <div class="emptybar"></div>
-            <div class="filledbar"></div>
-          </div>
-          <p class="courseFormText">
-            Иногда мы принимаем участие в различных мероприятиях и к нам можно
-            попасть на короткий мастеркласс. Следите за нашими новостями в
-            соцсетях.
-          </p>
-          
-        </div>
-      </div>
+      <div id="contacts">
+        <h2>запишитесь к нам</h2>
+        <p>
+          Если вы заинтересовались нашими курсами, оставьте заявку, заполнив
+          форму ниже. С вами свяжется менеджер, чтобы ответить на все вопросы.
+          Мы с нетерпением ждём вас на наших занятиях! Онлайн и офлайн.
+        </p>
 
-      <div class="block" id="form">
         <form class="form">
           <!--           <div class="formContent"> -->
 
@@ -239,37 +193,18 @@
             * нажимая кнопку отправить Вы даете согласие на обработку Ваших
             персональных данных
           </div>
-          <div class="formSent">
-            информация отправлена
-          </div>
           <button id="submit" class="formbtn">
             отправить
           </button>
         </form>
-        <!--           </div> -->
-        <div class="blockText">
-          <h2 class="textBold">
-            запишитесь к нам
-          </h2>
-          <div class="blockBar"></div>
-          <p class="textSimple">
-            Мы с нетерпением ждём вас на наших занятиях! Онлайн и офлайн.
-          </p>
-        </div>
+
+        <p>
+          !&lt;одия, 2020 ©
+        </p>
       </div>
+
+      <footer></footer>
     </div>
-
-    <footer>
-      <p class="textHeader">мы в соцсетях: <a href="..">instagram</a></p>
-      <p class="textHeader">
-        !&lt;одия, 2020 &copy
-      </p>
-    </footer>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <!--     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div> -->
-    <!--     <script src="https://button.glitch.me/button.js" defer></script> -->
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
