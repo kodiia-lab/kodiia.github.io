@@ -1,112 +1,108 @@
-@charset "utf-8";
-/* CSS Document */
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 body {
-  font-family: Trebuchet MS;
-
+  font-family: Roboto, sans-serif;
+  font-size: 100%;
+  margin: 2em auto 2em auto;
+  background: rgb(245, 240, 245);
+  width: min(80%, 800px);
 }
 
-@media (min-width: 480px) {
-
-.container{
-  width: 60%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: start;
-  align-items: start;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.block_center{
-margin-left: 0;
-   }
-
-.footer{
-  width: 60%;
-  margin:auto;
-  padding-top: 50vh;
-  padding-bottom: 40vh;
-  /* margin-top: 50vh; */
-  /* margin-left: auto; */
-
+button {
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+  height: 50px;
+  color: blue;
+  font-size: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 255, 0.1);
 }
 
+p{
+  font-family: Open sans;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-
-
-@media (min-width: 1500px) {
-
-.container{
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) ;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-}
-.block_center{
-grid-column: 1 / span 2;
-
-   }
-
-   .footer{
-
-  grid-column: 1 / span 2;
-   }
-
-}
-
-
-
-.block{
-text-align: left;
-padding: 10px;
-   }
-
-.block1 {
-  margin-left: 0;
-  margin-top: 38vh;
-text-align: left;
-padding: 10px;
-
-}
-
-
-
-.logo{
-font-size: 30vh;
-font-weight: 900;
-}
-
-.title{
-  display:inline;
-  font-size: 4vh;
-  font-weight: 900;
-  color: #ffffff;
-  background-color: #ff28a2;
+#courses,
+#form,
+#contacts {
+/*   visibility: hidden; */
+  display: none;
+  margin-bottom: 5vh;
   padding: 10px;
+  position: absolute;
+  top: 200px;
+  color: blue;
+  width: min(68%, 680px);
+  border: 1px solid;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 255, 0.1);
 }
 
-.title_1{
-  font-size: 4vh;
-  font-weight: 900;
-  padding-right: 10vh;
+#kodiia {
+  margin-bottom: 10vh;
   padding: 10px;
-  color: #ff28a2;
+  position: absolute;
+  top: 200px;
+  color: blue;
+  width: min(68%, 680px);
+  border: 1px solid;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1em 1em 1em rgba(0, 0, 255, 0.1);
 }
 
-.title_small{
-  font-size: 2.5vh;
-  font-weight: 900;
-  color: #000;
-  }
+.formMail {
+  margin-top: 1rem;
+  padding: 5px;
+  width: 95%;
+  height: 1rem;
+  border: 1px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  color: blue;
+  font-size: 0.9rem;
+  background: rgba(250, 250, 250, 0);
+}
 
-.text{
-    font-size: 2vh;
-    font-weight: 100;
-    color: #000;
+.formMessage {
+  margin: 1rem auto 0 auto;
+  padding: 5px;
+  width: 95%;
+  height: 35vh;
+  border: 1px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  color: blue;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  background: rgba(250, 250, 250, 0);
+}
 
-  }
+a{
+  text-decoration: none;
+  color: blue;
+}
+#submit{
+  width: 95%;
+}
+
+h1 {
+}
