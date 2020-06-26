@@ -23,7 +23,7 @@ button {
   margin: 5px;
   height: 50px;
   color: blue;
-  font-size: 100%;
+  font-size: min(100%, 2vw);
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0.5em 0.5em 1em rgba(0, 0, 255, 0.1);
 }
