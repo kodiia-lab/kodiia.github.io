@@ -43,7 +43,8 @@ submitBtn.addEventListener('click', function(){
     .then(function(){
     console.log("Data Saved");
     // clear form
-    document.getElementById("#form").reset();
+      alert("OK!")
+    //document.getElementById("#form").reset();
   })
     .catch(function(error){
     console.log("Error");
@@ -51,30 +52,6 @@ submitBtn.addEventListener('click', function(){
   })
 });
 
-// let showKodiia = () => {
-//   document.getElementById("kodiia").style.visibility = "visible";
-//   document.getElementById("courses").style.visibility = "hidden";
-//   document.getElementById("form").style.visibility = "hidden";
-//   document.getElementById("contacts").style.visibility = "hidden";  
-// }
-// let showCourses = () => {
-//   document.getElementById("kodiia").style.visibility = "hidden";
-//   document.getElementById("courses").style.visibility = "visible";
-//   document.getElementById("form").style.visibility = "hidden";
-//   document.getElementById("contacts").style.visibility = "hidden";  
-// }
-// let showForm = () => {
-//   document.getElementById("kodiia").style.visibility = "hidden";
-//   document.getElementById("courses").style.visibility = "hidden";
-//   document.getElementById("form").style.visibility = "visible";
-//   document.getElementById("contacts").style.visibility = "hidden";  
-// }
-// let showContacts = () => {
-//   document.getElementById("kodiia").style.visibility = "hidden";
-//   document.getElementById("courses").style.visibility = "hidden";
-//   document.getElementById("form").style.visibility = "hidden";
-//   document.getElementById("contacts").style.visibility = "visible";  
-// }
 let showKodiia = () => {
   document.getElementById("kodiia").style.display = "block";
   document.getElementById("courses").style.display = "none";
