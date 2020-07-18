@@ -2,7 +2,7 @@
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console
-console.log("hi");
+console.log("Добро пожаловать на страницу Кодии! Welcome to Kodiia page!");
 
 var firebaseConfig = {
   apiKey: "AIzaSyBOkZky53FmG4Cs4NPd8vMgxIl3p7vZii4",
@@ -43,7 +43,7 @@ submitBtn.addEventListener('click', function(){
     .then(function(){
     console.log("Data Saved");
     // clear form
-      alert("OK!")
+     // alert("OK!")
     //document.getElementById("#form").reset();
   })
     .catch(function(error){
