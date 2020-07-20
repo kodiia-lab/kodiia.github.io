@@ -26,31 +26,6 @@ let userMessage = document.querySelector("#userMessage");
 
 const db = firestore.collection("contactData");
 
-// submitBtn.addEventListener('click', function(){
-//   let userNameInput = userName.value;
-//   let userPhoneInput = userPhone.value;
-//   let userMailInput = userMail.value;
-//   let userMessageInput = userMessage.value;
-  
-//   db.doc()
-//     .set({
-//     name: userNameInput,
-//     phone: userPhoneInput,
-//     mail: userMailInput,
-//     message: userMessageInput
-//   })
-//     .then(function(){
-//     console.log("Data Saved");
-//     // clear form
-//      // alert("OK!")
-//     //document.getElementById("#form").reset();
-//   })
-//     .catch(function(error){
-//     console.log("Error");
-//     // alert("Error");
-//   })
-// });
-
 
 function formSend(){
   let userNameTestInput = userName.value;
