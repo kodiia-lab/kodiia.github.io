@@ -1,7 +1,6 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
-// prints "hi" in the browser's dev tools console
 console.log("Добро пожаловать на страницу Кодии! Welcome to Kodiia page!");
 
 var firebaseConfig = {
@@ -27,21 +26,47 @@ let userMessage = document.querySelector("#userMessage");
 
 const db = firestore.collection("contactData");
 
-submitBtn.addEventListener('click', function(){
-  let userNameInput = userName.value;
-  let userPhoneInput = userPhone.value;
-  let userMailInput = userMail.value;
-  let userMessageInput = userMessage.value;
+// submitBtn.addEventListener('click', function(){
+//   let userNameInput = userName.value;
+//   let userPhoneInput = userPhone.value;
+//   let userMailInput = userMail.value;
+//   let userMessageInput = userMessage.value;
   
-  db.doc()
+//   db.doc()
+//     .set({
+//     name: userNameInput,
+//     phone: userPhoneInput,
+//     mail: userMailInput,
+//     message: userMessageInput
+//   })
+//     .then(function(){
+//     console.log("Data Saved");
+//     // clear form
+//      // alert("OK!")
+//     //document.getElementById("#form").reset();
+//   })
+//     .catch(function(error){
+//     console.log("Error");
+//     // alert("Error");
+//   })
+// });
+
+
+function formSend(){
+  let userNameTestInput = userName.value;
+  let userPhoneTestInput = userPhone.value;
+  let userMailTestInput = userMail.value;
+  let userMessageTestInput = userMessage.value;
+  
+  db.doc(userMailTestInput)
     .set({
-    name: userNameInput,
-    phone: userPhoneInput,
-    mail: userMailInput,
-    message: userMessageInput
+    name: userNameTestInput,
+    phone: userPhoneTestInput,
+    mail: userMailTestInput,
+    message: userMessageTestInput
   })
     .then(function(){
-    console.log("Data Saved");
+    console.log("Contact Form Ready");
     // clear form
      // alert("OK!")
     //document.getElementById("#form").reset();
@@ -50,29 +75,50 @@ submitBtn.addEventListener('click', function(){
     console.log("Error");
     // alert("Error");
   })
-});
+};
 
-let showKodiia = () => {
-  document.getElementById("kodiia").style.display = "block";
-  document.getElementById("courses").style.display = "none";
-  document.getElementById("form").style.display = "none";
-  document.getElementById("contacts").style.display = "none";  
-}
-let showCourses = () => {
-  document.getElementById("kodiia").style.display = "none";
-  document.getElementById("courses").style.display = "block";
-  document.getElementById("form").style.display = "none";
-  document.getElementById("contacts").style.display = "none";  
-}
-let showForm = () => {
-  document.getElementById("kodiia").style.display = "none";
-  document.getElementById("courses").style.display = "none";
-  document.getElementById("form").style.display = "block";
-  document.getElementById("contacts").style.display = "none";  
-}
-let showContacts = () => {
-  document.getElementById("kodiia").style.display = "none";
-  document.getElementById("courses").style.display = "none";
-  document.getElementById("form").style.display = "none";
-  document.getElementById("contacts").style.display = "block";  
-}
+function formTest(){
+  let userNameTestInput = userName.value;
+  let userPhoneTestInput = userPhone.value;
+  let userMailTestInput = userMail.value;
+  let userMessageTestInput = userMessage.value;
+  
+  db.doc("test")
+    .set({})
+    .then(function(){
+    console.log("Contact Form Ready");
+      })
+    .catch(function(error){
+    console.log("Error");
+  })
+};
+
+
+formTest();
+
+let hcR = Math.floor(Math.random()*50+100);
+let hcG = Math.floor(Math.random()*50+100);
+let hcB = Math.floor(Math.random()*50+200);
+let acR = Math.floor(Math.random()*50+200);
+let acG = Math.floor(Math.random()*50+100);
+let acB = Math.floor(Math.random()*50+200);
+let ccR = Math.floor(Math.random()*50+100);
+let ccG = Math.floor(Math.random()*50+200);
+let ccB = Math.floor(Math.random()*50+200);
+let scR = Math.floor(Math.random()*50+200);
+let scG = Math.floor(Math.random()*50+200);
+let scB = Math.floor(Math.random()*50+100);
+let cfcR = Math.floor(Math.random()*50+200);
+let cfcG = Math.floor(Math.random()*50+200);
+let cfcB = Math.floor(Math.random()*50+200);
+let fcR = Math.floor(Math.random()*50+200);
+let fcG = Math.floor(Math.random()*50+200);
+let fcB = Math.floor(Math.random()*50+200);
+
+
+document.getElementById("header").style.backgroundColor = "rgb(" + hcR +"," + hcG + "," +  hcB + ")";
+document.getElementById("about").style.backgroundColor = "rgb(" + acR +"," + acG + "," +  acB + ")";
+document.getElementById("course").style.backgroundColor = "rgb(" + ccR +"," + ccG + "," +  ccB + ")";
+document.getElementById("study").style.backgroundColor = "rgb(" + scR +"," + scG + "," +  scB + ")";
+document.getElementById("contact").style.backgroundColor = "rgb(" + cfcR +"," + cfcG + "," +  cfcB + ")";
+document.getElementById("footer").style.backgroundColor = "rgb(" + fcR +"," + fcG + "," +  fcB + ")";
