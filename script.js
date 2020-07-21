@@ -71,18 +71,18 @@ function formTest(){
 
 formTest();
 
-let hcR = Math.floor(Math.random()*50+100);
-let hcG = Math.floor(Math.random()*50+100);
+let hcR = Math.floor(Math.random()*50+150);
+let hcG = Math.floor(Math.random()*50+150);
 let hcB = Math.floor(Math.random()*50+200);
 let acR = Math.floor(Math.random()*50+200);
-let acG = Math.floor(Math.random()*50+100);
+let acG = Math.floor(Math.random()*50+150);
 let acB = Math.floor(Math.random()*50+200);
-let ccR = Math.floor(Math.random()*50+100);
+let ccR = Math.floor(Math.random()*50+150);
 let ccG = Math.floor(Math.random()*50+200);
 let ccB = Math.floor(Math.random()*50+200);
 let scR = Math.floor(Math.random()*50+200);
 let scG = Math.floor(Math.random()*50+200);
-let scB = Math.floor(Math.random()*50+100);
+let scB = Math.floor(Math.random()*50+150);
 let cfcR = Math.floor(Math.random()*50+200);
 let cfcG = Math.floor(Math.random()*50+200);
 let cfcB = Math.floor(Math.random()*50+200);
