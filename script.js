@@ -91,6 +91,59 @@ let fcG = Math.floor(Math.random()*50+200);
 let fcB = Math.floor(Math.random()*50+200);
 
 
+let sA = 0;
+let showAbout = () => {
+  sA++;
+  if (sA > 1){
+    sA=0;
+  }
+  if (sA == 1){
+  document.getElementById("aboutText").style.display = "block";
+} else if (sA == 0) {
+  document.getElementById("aboutText").style.display = "none";
+}
+  };
+
+let sC = 0;
+let showCourse = () => {
+  sC++;
+  if (sC > 1){
+    sC=0;
+  }
+  if (sC == 1){
+  document.getElementById("courseText").style.display = "block";
+} else if (sC == 0) {
+  document.getElementById("courseText").style.display = "none";
+}
+  };
+
+let sS = 0;
+let showStudy = () => {
+  sS++;
+  if (sS > 1){
+    sS=0;
+  }
+  if (sS == 1){
+  document.getElementById("studyText").style.display = "block";
+} else if (sS == 0) {
+  document.getElementById("studyText").style.display = "none";
+}
+  };
+
+let sCont = 0;
+let showContact = () => {
+  sCont++;
+  if (sCont > 1){
+    sCont=0;
+  }
+  if (sCont == 1){
+  document.getElementById("contactText").style.display = "block";
+} else if (sCont == 0) {
+  document.getElementById("contactText").style.display = "none";
+}
+  };
+
+
 document.getElementById("header").style.backgroundColor = "rgb(" + hcR +"," + hcG + "," +  hcB + ")";
 document.getElementById("about").style.backgroundColor = "rgb(" + acR +"," + acG + "," +  acB + ")";
 document.getElementById("course").style.backgroundColor = "rgb(" + ccR +"," + ccG + "," +  ccB + ")";
