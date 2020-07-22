@@ -58,7 +58,7 @@ function formTest(){
   let userMailTestInput = userMail.value;
   let userMessageTestInput = userMessage.value;
   
-  db.doc("test")
+  db.doc()
     .set({})
     .then(function(){
     console.log("Contact Form Ready");
