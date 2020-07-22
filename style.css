@@ -77,9 +77,7 @@ article {
 #aboutText {
   display: none;
 }
-#about:hover #aboutText {
-  display: block;
-}
+
 
 #course {
   /*   background: #0066ff; */
@@ -87,9 +85,7 @@ article {
 #courseText {
   display: none;
 }
-#course:hover #courseText {
-  display: block;
-}
+
 
 #study {
   /*   background: #3399ff; */
@@ -97,9 +93,7 @@ article {
 #studyText {
   display: none;
 }
-#study:hover #studyText {
-  display: block;
-}
+
 
 #contact {
   /*   background: #33ccff; */
@@ -107,9 +101,7 @@ article {
 #contactText {
   display: none;
 }
-#contact:hover #contactText {
-  display: block;
-}
+
 
 .formMail {
   margin-top: 1rem;
