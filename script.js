@@ -40,16 +40,6 @@ function formSend(){
     mail: userMailTestInput,
     message: userMessageTestInput
   })
-    .then(function(){
-    console.log("Contact Form Ready");
-    // clear form
-     // alert("OK!")
-    //document.getElementById("#form").reset();
-  })
-    .catch(function(error){
-    console.log("Error");
-    // alert("Error");
-  })
 };
 
 function formTest(){
@@ -59,14 +49,9 @@ function formTest(){
   let userMessageTestInput = userMessage.value;
   
   db.doc()
-    .set({})
-    .then(function(){
-    console.log("Contact Form Ready");
-      })
-    .catch(function(error){
-    console.log("Error");
-  })
-};
+    .set({
+      text: "OK"
+  });
 
 
 formTest();
