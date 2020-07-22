@@ -137,9 +137,9 @@ let showContact = () => {
     sCont=0;
   }
   if (sCont == 1){
-  document.getElementById("contactHead").style.display = "block";
+  document.getElementById("contactText").style.display = "block";
 } else if (sCont == 0) {
-  document.getElementById("contactHead").style.display = "none";
+  document.getElementById("contactText").style.display = "none";
 }
   };
 
