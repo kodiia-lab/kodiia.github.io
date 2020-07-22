@@ -48,7 +48,7 @@ function formTest(){
   let userMailTestInput = userMail.value;
   let userMessageTestInput = userMessage.value;
   
-  db.doc()
+  db.doc("test")
     .set({
       text: "OK"
   });
